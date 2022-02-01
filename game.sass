@@ -1,0 +1,36 @@
+@import 'variable'
+
+.main
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+    &__text
+        padding-top: 20px
+        width: 70px
+        display: flex
+        justify-content: space-between
+
+    &__container
+        width: 800px
+        height: 640px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+
+        .card
+            width: 150px
+            height: 150px
+            background-color: $cardBackground
+            border: 1px solid $cardBorder
+            transform-style: preserve-3d
+            transition: all 1s ease
+
+        .flipCard
+            transform: rotateY(180deg)
+            background-image: url(https://eredfox.pl/userdata/public/gfx/5464/e2cf7f245b438e4a90804e480726e261.jpg)
+            background-size: cover
